@@ -1,0 +1,642 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Documentation JavaScript</title>
+    <link href="style.css" rel="stylesheet"/>
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header id="header-nav">Documentation </br>JavaScript</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Histoire" class="nav-link">Histoire</a></li>
+            <li><a href="#Sécurité" class="nav-link">Sécurité</a></li>
+            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Utilisation_sur_site" class="nav-link">Utilisation sur site</a></li>
+            <li><a href="#Utilisation_sur_web" class="nav-link">Utilisation sur web</a></li>
+            <li><a href="#Liaison_des_identifiants" class="nav-link">Liaison des identifiants</a></li>
+            <li><a href="#Portée_lexicale" class="nav-link">Portée lexicale</a></li>
+            <li><a href="#Déclaration_des_variables" class="nav-link">Déclaration des variables</a></li>
+            <li><a href="#Variables_globales" class="nav-link">Variables globales</a></li>
+            <li><a href="#Fonctions_anonymes" class="nav-link">Fonctions anonymes</a></li>
+            <li><a href="#Fermetures_lexicales" class="nav-link">Fermetures lexicales</a></li>
+            <li><a href="#IIFE" class="nav-link">IIFE</a></li>
+            <li><a href="#Prototypes" class="nav-link">Prototypes</a></li>
+            <li><a href="#Séparation_des_instructions" class="nav-link">Séparation des instructions</a></li>
+            <li><a href="#Référence" class="nav-link">Référence</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger">
+        <div class="trait"></div>
+        <div class="trait"></div>
+        <div class="trait"></div>
+    </div>
+    <div id="menu">
+        <nav>
+            <header id="header-nav">Documentation </br>JavaScript</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Histoire" class="nav-link">Histoire</a></li>
+                <li><a href="#Sécurité" class="nav-link">Sécurité</a></li>
+                <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+                <li><a href="#Utilisation_sur_site" class="nav-link">Utilisation sur site</a></li>
+                <li><a href="#Utilisation_sur_web" class="nav-link">Utilisation sur web</a></li>
+                <li><a href="#Liaison_des_identifiants" class="nav-link">Liaison des identifiants</a></li>
+                <li><a href="#Portée_lexicale" class="nav-link">Portée lexicale</a></li>
+                <li><a href="#Déclaration_des_variables" class="nav-link">Déclaration des variables</a></li>
+                <li><a href="#Variables_globales" class="nav-link">Variables globales</a></li>
+                <li><a href="#Fonctions_anonymes" class="nav-link">Fonctions anonymes</a></li>
+                <li><a href="#Fermetures_lexicales" class="nav-link">Fermetures lexicales</a></li>
+                <li><a href="#IIFE" class="nav-link">IIFE</a></li>
+                <li><a href="#Prototypes" class="nav-link">Prototypes</a></li>
+                <li><a href="#Séparation_des_instructions" class="nav-link">Séparation des instructions</a></li>
+                <li><a href="#Référence" class="nav-link">Référence</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header class="header-section">Introduction</header>
+            <hr>
+            <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web
+                interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js. C'est un langage
+                orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont
+                fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de
+                constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet
+                d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première
+                classe. Le langage supporte le paradigme objet, impératif et fonctionnel. JavaScript est le langage
+                possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environ 500 000
+                paquets en août 2014.
+                </br> <br>
+                JavaScript a été créé en 1995 par Brendan Eich. Il a été standardisé sous le nom d'ECMAScript en juin
+                1997 par Ecma International dans le standard ECMA-262. Le standard ECMA-262 en est actuellement à sa 8e
+                édition. JavaScript n'est depuis qu'une implémentation d'ECMAScript, celle mise en œuvre par la
+                fondation Mozilla. L'implémentation d'ECMAScript par Microsoft (dans Internet Explorer jusqu'à sa
+                version 9) se nomme JScript, tandis que celle d'Adobe Systems se nomme ActionScript.
+                </br> <br>
+                Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du
+                World Wide Web. Le langage JavaScript permet des pages web interactives, et à ce titre est une partie
+                essentielle des applications web. Une grande majorité des sites web l'utilisent, et la majorité des
+                navigateurs web disposent d'un moteur JavaScript dédié pour l'interpréter, indépendamment des
+                considérations de sécurité qui peuvent se poser le cas échéant.
+                </br> <br>
+
+            </p>
+
+        </section>
+        <hr>
+        <section class="main-section" id="Histoire">
+            <header class="header-section">Histoire</header>
+            <hr>
+            <p>Le langage a été créé en dix jours en mai 1995 pour le compte de la Netscape Communications Corporation
+                par Brendan Eich, qui s'est inspiré de nombreux langages, notamment de Java mais en simplifiant la
+                syntaxe pour les débutants.Brendan Eich a initialement développé un langage de script côté serveur,
+                appelé LiveScript, pour renforcer l'offre commerciale de serveur HTTP de Mosaic Communications
+                Corporation. La sortie de LiveScript intervient à l'époque où le NCSA force Mosaic Communications
+                Corporation à changer de nom pour devenir Netscape Communications Corporation.
+                <br><br>
+                Netscape travaille alors au développement d'une version orientée client de LiveScript. Quelques jours
+                avant sa sortie, Netscape change le nom de LiveScript pour JavaScript. Sun Microsystems et Netscape
+                étaient partenaires, et la machine virtuelle Java de plus en plus populaire. Ce changement de nom
+                servait les intérêts des deux sociétés.
+                <br><br>
+                En décembre 1995, Sun et Netscape annoncent la sortie de JavaScript. En mars 1996, Netscape met en œuvre
+                le moteur JavaScript dans son navigateur web Netscape Navigator 2.0. Le succès de ce navigateur
+                contribue à l'adoption rapide de JavaScript dans le développement web orienté client. Microsoft réagit
+                alors en développant JScript, qu'il inclut ensuite dans Internet Explorer 3.0 en août 1996 pour la
+                sortie de son navigateur.
+                <br><br>
+                JavaScript est décrit comme un complément à Java dans un communiqué de presse commun de Netscape et Sun
+                Microsystems, daté du 4 décembre 1995. Cette initiative a contribué à créer auprès du public une
+                certaine confusion entre les deux langages, proches syntaxiquement mais pas du tout dans leurs concepts
+                fondamentaux, et qui perdure encore de nos jours.
+                « JavaScript » devient une marque déposée par Oracle aux États-Unis en mai 1997.
+                Netscape soumet alors JavaScript à Ecma International pour standardisation. Les travaux débutent en
+                novembre 1996 et se terminent en juin 1997, donnant naissance à la 1re édition du standard ECMA-262 qui
+                spécifie le langage ECMAScript. Le standard est ensuite soumis à l'ISO/CEI et publié en avril 1998 en
+                tant que standard international ISO/CEI 16262.
+                <br><br>
+                Des changements rédactionnels sont apportées au standard ECMA-262 pour le conformer au standard
+                international ISO/CEI 16262, aboutissant à la 2e édition du standard ECMA-262 en juin 1998.
+                <br><br>
+                La 3e édition du standard ECMA-262 introduit des expressions rationnelles plus puissantes, une
+                amélioration de la manipulation des chaînes de caractères, de nouvelles instructions de contrôle, une
+                gestion des exceptions avec les instructions try/catch et le formatage des nombres. Elle est publiée par
+                Ecma International en décembre 1999 puis soumise à l'ISO/CEI qui publie le standard international
+                ISO/CEI 16262:2002 en juin 2002. Après la publication de la 3e édition s'ensuit une adoption massive par
+                tous les navigateurs Web.
+                <br><br>
+                Un travail conséquent est entrepris pour développer la 4e édition du standard ECMA-262, mais il ne sera
+                pas achevé et cette édition ne verra jamais le jour. Cependant une partie du développement effectué sera
+                intégrée à la 6e édition.
+                <br><br>
+                La 5e édition du standard ECMA-262 clarifie les ambiguïtés de la 3e édition et introduit les accesseurs,
+                l'introspection, le contrôle des attributs, des fonctions de manipulation de tableaux supplémentaires,
+                le support du format JSON et un mode strict pour la vérification des erreurs. Elle est publiée par Ecma
+                International en décembre 2009 puis soumise à l'ISO/CEI qui apporte des corrections mineures et publie
+                le standard international ISO/CEI 16262:2011 en juin 2011. L'édition 5.1 du standard ECMA-262 reprenant
+                à l'identique le texte du standard international ISO/CEI 16262:2011 est publiée à la même date.
+                <br><br>
+                Bien que le développement de la 6e édition du standard ECMA-262 ait commencé officiellement en 2009, peu
+                avant la publication de la 5e édition, sa publication en juin 2015 est en réalité l'aboutissement de 15
+                ans de travail depuis la publication de la 3e édition en 1999. Le but de cette 6e édition est d'apporter
+                un meilleur support pour les applications d'envergure, la création de bibliothèques et l'utilisation
+                d'ECMAScript comme cible de compilation pour d'autres langages. Cette édition introduit notamment les
+                modules, les classes, la portée lexicale au niveau des blocs, les itérateurs et les générateurs, les
+                promesses pour la programmation asynchrone, les patrons de destructuration, l'optimisation des appels
+                terminaux, de nouvelles structures de données (tableaux associatifs, ensembles, tableaux binaires), le
+                support de caractères Unicode supplémentaires dans les chaînes de caractères et les expressions
+                rationnelles et la possibilité d'étendre les structures de données prédéfinies.
+                <br><br>
+                La 7e édition du standard ECMA-262 est la première édition issue du nouveau processus de développement
+                ouvert et du rythme de publication annuel adoptés par le comité Ecma TC39. Un document au format texte
+                est créé à partir de la 6e édition et est mis en ligne sur GitHub comme base de développement pour cette
+                nouvelle édition. Après la correction de milliers de bugs et d'erreurs rédactionnelles ainsi que
+                l'introduction de l'opérateur d'exponentiation et d'une nouvelle méthode pour les prototypes de
+                tableaux, la 7e édition est publiée en juin 2016.
+
+                L'édition actuelle du standard ECMA-262 est la 10e édition, publiée en juin 2019.
+                <br></p>
+        </section>
+        <hr>
+        <section class="main-section" id="Sécurité">
+            <header class="header-section">Sécurité</header>
+            <hr>
+            <p>JavaScript et la structure DOM des pages HTML/XML fournissent un potentiel à des auteurs mal intentionnés
+                de livrer par le web des scripts qui s'exécutent sur l'ordinateur cible de l'utilisateur du Web. Les
+                fournisseurs de navigateurs tentent de réduire ce risque avec deux restrictions : L'une est de faire
+                exécuter ces scripts dans un espace à part des autres données (sandbox) dans lequel seules des actions
+                relatives au web (mouvements de souris, affichage de pixel, communications) peuvent être exécutées, sans
+                avoir accès au système de fichier principal. Une seconde est de n'exécuter les scripts que selon les
+                contraintes de same-origin policy : dans cet esprit, un site Web ne doit pas avoir accès aux
+                informations telles que les noms d'utilisateur et mot de passe ou cookies reçus des autres sites
+                visités. Les vulnérabilités de JavaScript sont bien souvent des brèches d'au moins l'un de ces deux
+                principes.
+                <br><br>
+                Certains sous-ensembles du langage Javascript tels que JavaScript—ADsafe ou Secure ECMAScript (SES)
+                fournissent de plus grands niveaux de sécurité, en particulier pour les scripts créés par des tierces
+                parties (notamment les publicités). Caja est un autre logiciel pour inclure et isoler de manière
+                sécurisée du JavaScript et du HTML tierce partie.
+                <br><br>
+                La Politique de sécurité du contenu est la principale méthode destinée à assurer que seul des script de
+                confiance est exécuté sur une page Web. Meltdown est une vulnérabilité indépendante de Javascript, qui
+                peut notamment être exploitée en Javascript.
+                <br><br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Hello_World">
+            <header class="header-section">Hello World</header>
+            <hr>
+
+            <p>Le propos de JavaScript est de manipuler de façon simple des objets, au sens informatique, fournis par
+                une application hôte. Par exemple dans un navigateur web, un script écrit en javascript peut être
+                utilisé pour apporter une touche interactive ou dynamique à un applicatif (page ou site web), qui sans
+                cela serait une page statique figée. Le langage Javascript permet par exemple d'écrire des scripts pour
+                afficher ou cacher un paragraphe, une image ou un popup, selon les interactions de l'utilisateur, ou
+                d'informer le serveur du temps passé à lire une page.</p>
+
+            <p>Il est possible dans un script en langage Javascript, d'afficher le texte hello world sur la console de
+                debug de l’application. Ceci peut-être utilisé par des développeurs en phase de mise au point:
+                <br><br>
+                <code>
+          window.console.log('Hello world'); window.console.exp(hello world)
+          // ou
+          global.console.log('Hello world'); window.console.log(hello world)
+        </code>
+                <br><br>
+                Les méthodes de l'objet global étant accessibles sans préfixe, window et global sont facultatifs.
+                </br>
+                La syntaxe
+                <br><br>
+                <code>console.log('Hello world');</code>
+                <br><br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Utilisation_sur_web">
+            <header class="header-section">Utilisation sur web</header>
+            <hr>
+            <p>JavaScript peut également être utilisé comme langage de programmation sur un serveur HTTP à l'image des
+                langages comme PHP, ASP, etc. D'ailleurs le projet CommonJS travaille dans le but de spécifier un
+                écosystème pour JavaScript en dehors du navigateur (par exemple sur le serveur ou pour les applications
+                de bureau natives). Le projet a été lancé par Kevin Dangoor en janvier 2009. Le projet CommonJS n'est
+                pas affilié avec le groupe de l'Ecma International TC39 travaillant sur ECMAScript, mais certains
+                membres du TC39 participent au projet.
+                <br><br>
+                Historiquement, JavaScript était proposé sur les serveurs de Netscape, par la suite distribués par Sun
+                Microsystems sous les noms iPlanet et Sun ONE, mais JScript peut aussi être utilisé sur les serveurs
+                Internet Information Services de Microsoft. JScript peut d'ailleurs servir pour scripter une plate-forme
+                Microsoft Windows via Windows Scripting Host (WSH).
+                <br><br>
+                Il existe par ailleurs des projets indépendants et Open Source d'implémentation de serveurs en
+                JavaScript. Parmi eux, on pourra distinguer Node.js, une plateforme polyvalente de développement
+                d'applications réseau se basant sur le moteur JavaScript V8 et les spécifications CommonJS.
+                <code></code>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Utilisation_sur_site">
+            <header class="header-section">Utilisation sur site</header>
+            <hr>
+            <p>
+                Du code JavaScript peut être intégré directement au sein des pages web, pour y être exécuté sur le poste
+                client. C'est alors le navigateur web qui prend en charge l'exécution de ces programmes appelés scripts.
+                <br><br>
+                Généralement, JavaScript sert à contrôler les données saisies dans des formulaires HTML, ou à interagir
+                avec le document HTML via l'interface Document Object Model, fournie par le navigateur (on parle alors
+                parfois de HTML dynamique ou DHTML). Il est aussi utilisé pour réaliser des applications dynamiques, des
+                transitions, des animations ou manipuler des données réactives, à des fins ergonomiques ou cosmétiques.
+                <br><br>
+                JavaScript n'est pas limité à la manipulation de documents HTML et peut aussi servir à manipuler des
+                documents SVG, XUL et autres dialectes XML.
+                <ul>
+                    <li>Incompatibilité</li>
+                    <p>Netscape et Microsoft (avec JScript dans Internet Explorer jusqu'à la version 9) ont développé
+                        leur propre variante de ce langage qui chacune supporte presque intégralement la norme
+                        ECMAScript mais possède des fonctionnalités supplémentaires et incompatibles, rarement utilisées
+                        dans le cadre de la programmation de pages web. Pourtant les scripts JavaScript sont souvent la
+                        source de difficultés. Elles sont plus souvent dues à la prise en charge des différentes
+                        versions des modèles d'objets (DOM) fournis par les navigateurs, qu'à des problèmes de
+                        portabilité du langage (les différentes mises en œuvre respectant relativement bien la norme
+                        ECMAScript).
+                        <br><br>
+                        Pour vérifier dynamiquement si un objet (dans la version JavaScript utilisée lors de
+                        l'interprétation) possède bien une méthode, on utilise souvent une construction du type :
+                        <br><br>
+                        <code>if (monObjet.methode && typeof monObjet.methode === 'function') {
+              monObjet.methode();<br>
+              }</code>
+                        <br><br>
+                        On vérifie ainsi que monObjet a bien une mise en œuvre de methode que l'on peut alors utiliser.
+                        Le plus souvent, si un navigateur ne gère pas la methode de monObjet, il gère une méthode
+                        comparable methode2, et on peut alors adapter le code JavaScript au navigateur qui l'exécute :
+
+                        <br><br>
+                        <code>if (monObjet.methode && typeof monObjet.methode === 'function') {</br>
+              monObjet.methode();<br>
+              }</code>
+
+                        <br><br>
+                        Une autre méthode consiste à vérifier, côté serveur, le navigateur utilisé par le client et
+                        d'envoyer le code correspondant. Cela n'est toutefois pas recommandable, car il est largement
+                        préférable de tester directement l'existence, le comportement d'une fonction, d'une propriété,
+                        etc. plutôt que de faire des présomptions basées sur la détection du navigateur.
+                    </p>
+
+                    <li>Ajax</li>
+                    <p>Ajax (de l'anglais Asynchronous JavaScript And XML) est un ensemble de techniques découplant
+                        l'échange de données entre le navigateur et le serveur web de l'affichage d'une page web, ce qui
+                        permet de modifier le contenu des pages web sans les recharger. Grâce à l'objet JavaScript
+                        XMLHTTPRequest, cette méthode permet d'effectuer des requêtes HTTP sur le serveur web depuis le
+                        navigateur web, et permet également de traiter les réponses HTTP du serveur web pour modifier le
+                        contenu de la page web. La réponse était en général au format XML qui tend aujourd'hui à être
+                        remplacé par le format JSON qui a l'avantage d'être natif en JavaScript. Le script manipule
+                        l'ensemble d'objets DOM qui représente le contenu de la page web. Les technologies
+                        XMLHTTPRequest, XML et DOM ont été ajoutées aux navigateurs web entre 1995 et 2005. La méthode
+                        Ajax permet de réaliser des applications Internet riches, offrant une maniabilité et un confort
+                        supérieur ; c'est un des sujets phares du mouvement Web 2.0.</p>
+                    <li>JSON</li>
+                    <p>JSON (JavaScript Object Notation) est un format utilisant la notation des objets JavaScript pour
+                        transmettre de l'information structurée, d'une façon plus compacte et plus proche des langages
+                        de programmation, que XML.
+                        <br><br>
+                        Malgré l'existence du DOM et l'introduction récente de E4X (voir ci-dessous) dans la
+                        spécification du langage JavaScript, JSON reste le moyen le plus simple d'accéder à des données,
+                        puisque chaque flux JSON n'est rien d'autre qu'un objet JavaScript sérialisé. De plus, malgré
+                        son lien historique (et technique) avec JavaScript, JSON reste un format de données structurées,
+                        et peut être utilisé facilement par tous les langages de programmation.
+                        <br><br>
+                        Depuis 2009, les navigateurs commencent à intégrer un support natif du format JSON, ce qui
+                        facilite sa manipulation, la sécurité (contre l'évaluation de scripts malveillants inclus dans
+                        une chaine JSON), et la rapidité de traitement. Ainsi les navigateurs Firefox et IE20
+                        l'intègrent respectivement dès les versions 3.5 et 8.
+
+                        Exemple de JSON :
+                        <br><br>
+                        <code>{
+              "clef1": "valeur",<br>
+              "clef2": 12345,<br>
+              "clef3": true,<br>
+              "clef4": {<br>
+              "clef5": "valeur"<br>
+              }
+
+              }</code></br></br>
+
+                        La structure est organisée par clef/valeurs. Les clefs doivent être entre guillemets doubles.
+                        Les valeurs peuvent être :
+                        <br><br>
+                        -une string (chaîne de caractères entre guillemets doubles)
+                        -un nombre
+                        -un booléen (true ou false pour vrai ou faux)
+                        -une structure clef/valeur
+                        Un JSON valide ne peut pas comporter de commentaires. Il existe des validateurs de JSON en
+                        ligne.</p>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+                <code></code>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Liaison_des_identifiants">
+            <header class="header-section">Liaison des identifiants</header>
+            <hr>
+            <p>En JavaScript, toutes les expressions (identifiants, littéraux et opérateurs et leurs opérandes) sont de
+                type référence (comme en Python et Ruby, mais à la différence du C++, Java, C#, Swift et OCaml qui
+                possèdent aussi des expressions de type valeur), c'est-à-dire que leur évaluation ne produit pas une
+                donnée directement mais une référence vers une donnée. La référence se nomme le référent de l’expression
+                et la donnée le référé de l’expression.
+                <br><br>
+                En JavaScript, l'affectation d'une variable modifie son référent, autrement dit elle lie la variable à
+                une autre donnée : on parle de changement de liaison de la variable (en anglais variable rebinding).
+                <br><br>
+                <code>var maVariable1 = 0; &ensp; // lie `maVariable1` à une donnée de valeur 0 <br>
+          var maVariable2 = maVariable1; &ensp; // lie `maVariable2` à la donnée liée à `maVariable1`<br>
+          maVariable1++; &ensp; // équivalent à `maVariable1 = maVariable1 + 1;`, relie `maVariable1` à une nouvelle </br>donnée de valeur maVariable1 + 1 (affectation)<br>
+          alert(maVariable1); &ensp; // affiche 1<br>
+          alert(maVariable2); &ensp; // affiche 0<br>
+
+          var maVariable3 = [1, 2, 3]; &ensp; // lie `maVariable3` à une donnée de valeur [1, 2, 3]<br>
+          var maVariable4 = maVariable3; &ensp; // lie `maVariable4` à la donnée liée à `maVariable3`<br>
+          maVariable3 = [4, 5, 6]; &ensp; // relie `maVariable3` à une nouvelle donnée de valeur [4, 5, 6] (affectation)<br>
+          alert(maVariable3); &ensp; // affiche [4, 5, 6]<br>
+          alert(maVariable4); &ensp; // affiche [1, 2, 3]<br>
+
+          var maVariable5 = [1, 2, 3]; &ensp; // lie `maVariable5` à une donnée de valeur [1, 2, 3]<br>
+          var maVariable6 = maVariable5;&ensp; // lie `maVariable6` à la donnée liée à `maVariable5`<br>
+          maVariable5.push(4); &ensp; // modifie la donnée liée à `maVariable5` et `maVariable6`<br>
+          alert(maVariable5); &ensp; // affiche [1, 2, 3, 4]<br>
+          alert(maVariable6); &ensp; // affiche [1, 2, 3, 4]</code><br></br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Portée_lexicale">
+            <header class="header-section">Portée lexicale</header>
+            <hr>
+            <p>La portée lexicale d'une variable est la partie d'un programme où la liaison entre son identifiant et sa
+                donnée est valide. En JavaScript, la portée lexicale d'une variable peut être de deux types, selon le
+                mot-clé utilisé pour la déclarer :
+                <br>
+                var : au niveau de la fonction (ou de l'espace global) où elle est déclarée (comme en Python, Ruby) ;
+                let ou const (introduits dans ECMAScript 6) : au niveau du bloc où elle est déclarée (comme en C++,
+                Java, C#) — une fonction étant un bloc particulier.
+
+                <code>// 1. Déclaration dans un bloc<br>
+
+          if (true) { <br>
+          var maVariable1; <br>
+          let maVariable2; <br>
+          const maVariable3; <br>
+          } <br>
+          <br>
+          alert(maVariable1); <br>
+          alert(maVariable2); <br>
+          alert(maVariable3); <br>
+          <br>
+          // 2. Déclaration dans une fonction<br>
+          <br>
+          function maFunction() {<br>
+          var maVariable4; <br>
+          let maVariable5; <br>
+          const maVariable6; <br>
+          } <br>
+          <br>
+          alert(maVariable4); <br>
+          alert(maVariable5); <br>
+          alert(maVariable6); </code><br><br>
+
+                Une variable peut être affectée ou masquée par une fonction enfant de la fonction (ou de l'espace
+                global) où elle est déclarée :
+                <br><br>
+                <code>
+          <br>
+          <br>
+          function maFonction1() { <br>
+          maVariable1 = 1; <br>
+          }
+          <br>
+          alert(maVariable1); <br>
+          maFonction1(); <br>
+          alert(maVariable1); <br>
+          <br>
+          // 2. Masquage
+          <br>
+          var maVariable2 = 0; <br>
+          <br>
+          function maFonction2() { <br>
+          var maVariable2; <br>
+          maVariable2 = 1; <br>
+          }
+          <br>
+          alert(maVariable2); <br>
+          maFonction2();<br>
+          alert(maVariable2); </code><br><br>
+
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Déclaration_des_variables">
+            <header class="header-section">Déclaration des variables</header>
+            <hr>
+            <p><br>En JavaScript, quel que soit le lieu de la déclaration d'une variable dans sa portée lexicale, la
+                variable est créée au début de l'évaluation de sa portée lexicale.
+
+                Les variables déclarées avec le mot-clé var sont en plus pré-initialisées à la valeur undefined lors de
+                leur création, et donc accessibles dès le début de leur portée lexicale. On parle de remontée de la
+                variable (variable hoisting en anglais) car cela se passe comme si la déclaration de la variable était
+                remontée au début de sa portée lexicale :
+                <br><br> <code>alert(maVariable); // affiche undefined<br>
+          var maVariable = 0;<br>
+          alert(maVariable); </code><br><br>Les variables déclarées avec le mot-clé let ou const (ECMAScript 6) ne sont
+                pas pré-initialisées, et donc inaccessibles avant leur déclaration. Si une variable déclarée avec le
+                mot-clé let ne possède pas d'initialiseur, elle est initialisée à la valeur undefined lors de
+                l'évaluation de la déclaration, sinon elle est initialisée avec l'initialiseur lors de l'évaluation de
+                la déclaration. Si une variable déclarée avec le mot-clé const ne possède pas d'initialiseur, une erreur
+                est levée lors de l'évaluation de la déclaration, sinon elle est initialisée avec l'initialiseur lors de
+                l'évaluation de la déclaration :<br><br> <code>
+          <br>
+          alert(maVariable1); <br>
+          alert(maVariable2);<br>
+          let maVariable1 = 5;<br>
+          const maVariable2 = 8;</br>
+          alert(maVariable1); <br>
+          alert(maVariable2); <br>
+          <br>
+          // 2. Sans initialiseur
+          <br>
+          alert(maVariable3); <br>
+          alert(maVariable4); <br>
+          let maVariable3;<br>
+          const maVariable4; <br>
+          alert(maVariable3); <br>
+          alert(maVariable4); </code><br><br>De plus, JavaScript autorise la redéclaration de la même variable dans sa
+                portée lexicale, mais uniquement avec le mot-clé var :
+                <br><br><code>var maVariable = 2;<br>
+          var maVariable = 9;</code><br><br>
+
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Variables_globales">
+            <header class="header-section">Variables globales</header>
+            <hr>
+
+            <p>
+                En JavaScript, il existe plusieurs façons de déclarer une variable globale, et certaines interagissent
+                avec l'objet global (nommé window dans les navigateurs) :
+                </br></br><code>var maVariable1 = 0; <br>
+          let maVariable2 = 0; <br>
+          const maVariable3 = 0; <br>
+          maVariable4 = 0; <br>
+          window.maVariable5 = 0; <br>
+          this.maVariable6 = 0; </code><br></br>
+                Une variable initialisée sans déclaration est traitée comme une variable globale : <br><br><code>function maFonction() {<br>
+          maVariable = 5;<br>
+          }<br>
+          <br>
+          maFonction();<br>
+          alert(maVariable);</code><br></br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Fonctions_anonymes">
+
+            <header class="header-section">Fonctions anonymes</header>
+            <hr>
+            <p>Les fonctions anonymes sont, comme leur nom l'indique, des fonctions qui ne portent pas de nom :
+                <br><br> <code>setTimeout(function () {<br>
+          alert('Trois secondes se sont écoulées.');<br>
+          }, 3000);</code></br></br>Celle-ci est donnée en paramètre à la fonction setTimeout, qui permet de définir
+                une durée avant d'afficher le message.
+
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Fermetures_lexicales">
+            <header class="header-section">Fermetures lexicales</header>
+            <hr>
+            <p>Un environnement lexical est l'ensemble des variables valides dans une partie du programme. Il est
+                composé de l'environnement lexical interne (les variables locales) et d'une référence à l'environnement
+                lexical externe (les variables non locales).
+                <br><br>
+                Une fermeture lexicale (lexical closure en anglais) est une fonction accompagnée de son environnement
+                lexical externe, c'est-à-dire de l'ensemble des variables non locales qu'elle a capturé, soit par valeur
+                (conservation d'une copie de chaque donnée liée aux variables non locales), soit par référence
+                (conservation d'une référence à chaque donnée liée aux variables non locales). Comme en JavaScript
+                toutes les variables sont de type référence (cf. la section Liaison des identifiants), JavaScript
+                n'utilise que la capture par référence — ce qui correspond en C++ 11 à la syntaxe [&](…) { … }; —, et la
+                durée de vie des variables non locales capturées par une fonction est étendue à la durée de vie de la
+                fonction — ce qui n'est pas le cas en C++ 11, quel que soit le type de capture :
+                <br><br><code> var maVariable = 4; // variable parente
+
+          return function () {<br>
+          alert(maVariable);<br>
+          }<br>
+          }<br>
+
+          var maFermeture = maFonction(); <br>
+          maFermeture(); </code><br></br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="IIFE">
+
+            <header class="header-section">IIFE</header>
+            <hr>
+            <p>Jusqu'à ECMAScript 6, JavaScript ne proposait pas nativement de portée des variables au niveau des blocs
+                (pas de mots-clé let ou const), ni de modules. Pour éviter de polluer l'espace global, une méthode
+                consistait à encapsuler son code dans une fonction pour s'appuyer sur la portée des variables qui a lieu
+                au niveau des fonctions en JavaScript, puis à invoquer cette fonction juste après. Pour regrouper les
+                deux étapes (définition de la fonction et invocation) et ne pas ajouter un nom de fonction
+                supplémentaire dans l'espace global, le langage permet les expressions de fonctions immédiatement
+                invoquées (EFII ; en anglais immediately-invoked function expressions, IIFE).
+                <br><br><code>(function (…) { … }(…)); </code><br><br>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Prototypes">
+
+            <header class="header-section">Prototypes</header>
+            <hr>
+            <p>Les prototypes sont des objets utilisés lors d'un échec de résolution de nom. Ce mécanisme est un type
+                d'héritage : l'héritage par prototype. En JavaScript, tout objet possède un prototype, accessible via la
+                méthode Object.getPrototypeOf (ou via la propriété historique __proto__ standardisée dans ECMAScript 6
+                pour assurer la compatibilité entre les navigateurs mais non recommandée). De plus, l'opérateur new
+                permet de transformer l'invocation d'une fonction constructeur en un objet (instanciation) dont le
+                prototype est égale à la propriété prototype de la fonction constructeur :
+                <br><br> <code> this.maPropriete1 = 3;
+          }<br>
+          <br>
+          var monInstance = new MonConstructeur();<br>
+          alert(monInstance.maPropriete1); <br>
+          alert(Object.getPrototypeOf(monInstance) === MonConstructeur.prototype); <br>
+          MonConstructeur.prototype.maPropriete2 = 5;<br>
+          alert(monInstance.maPropriete2); </code><br><br>
+                Toute instance de MonConstructeur (monInstance ici) possède un prototype égale à
+                MonConstructeur.prototype. Lors de l'utilisation d'une propriété ou d'une méthode d'une instance de
+                MonConstructeur (monInstance.maPropriete1 et monInstance.maPropriete2 ici), si l'instance ne possède pas
+                la propriété ou la méthode recherchée, la recherche se poursuit dans le prototype de l'instance
+                (MonConstructeur.prototype ici). Si la recherche échoue aussi avec cet objet, la recherche se poursuit
+                dans le prototype de cet objet, et ainsi de suite jusqu'à arriver à la première fonction constructeur.
+                Si la recherche échoue encore, cette première fonction constructeur étant une fonction donc une instance
+                de la fonction constructeur Function du langage, la recherche se poursuit dans son prototype qui est
+                égal à Function.prototype. Si la recherche échoue à nouveau, Function.prototype étant un objet donc une
+                instance de la fonction constructeur Object du langage, la recherche se poursuit dans son prototype qui
+                est égal à Object.prototype. Si la recherche échoue cette fois, comme le prototype de Object.prototype
+                est égal à null, la recherche s'arrête et JavaScript génère une erreur de résolution de nom. Ce
+                mécanisme de recherche parcourt ce qu'on appelle la chaîne de prototypes.
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Séparation_des_instructions">
+
+            <header class="header-section">Séparation des instructions</header>
+            <hr>
+            <p>En C, chaque instruction se termine par un point-virgule. Cette pratique a fait du point-virgule une
+                obligation dans de nombreux langages inspirés de la syntaxe du C.
+
+                JavaScript est plus souple, permettant à une fin de ligne de marquer implicitement la fin d'une
+                instruction. Le but est de faciliter l'usage du langage aux personnes inexpérimentées en programmation
+                informatique. Mais cette souplesse introduit des effets inattendus :
+                <br><br><code>return<br>
+          true;</code><br></br>
+                <br><br>
+                <code>maVariable1 = maVariable2 + maVariable3
+          <br>
+          (function () {<br>
+          // code<br>
+          })()</code><br><br>
+                Les ouvrages de programmation avancés en JavaScript mettent en garde contre les effets inattendus de la
+                déduction automatique de fin d'instruction et conseillent d'écrire un point-virgule à la fin de chaque
+                instruction, ce qui n'empêche pas les surprises lorsqu'on oublie le point-virgule, d'autant plus quand
+                la compression du code impose le retrait des retours chariot.
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Référence">
+
+            <header class="header-section">Référence</header>
+            <hr>
+            <p>Page 'JavaScript' de Wikipédia, pour y accéder, veuillez sur le logo <a
+                    href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img id="logo-wiki"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wikipedia-logo-v2-fr.svg/669px-Wikipedia-logo-v2-fr.svg.png"
+                        alt="logo wikipédia" />
+                </a>
+            </p>
+        </section>
+
+    </main>
+</body>
+
+</html>
