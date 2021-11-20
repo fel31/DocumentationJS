@@ -1,0 +1,112 @@
+html {
+	font-family: Open sans, Gill Sans Extrabold, sans-serif;
+	line-height: 1.5;
+	text-align: left;
+	background: #F9F7F3;
+}
+body {
+	font-family: Open sans, Gill Sans Extrabold, sans-serif;
+	line-height: 1.5;
+	text-align: left;
+	background: #F9F7F3;
+}
+#navbar {
+	position: fixed;
+	height: 100%;
+	min-width: 280px;
+	background: #9FD5BF;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#header-nav {
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+nav {
+	ul {
+		li {
+			text-decoration: none;
+			list-style: none;
+			color: white;
+		}
+	}
+	li {
+		a {
+			text-decoration: none;
+			list-style: none;
+			color: white;
+		}
+	}
+}
+.nav-link {
+	display: block;
+	padding: 18px;
+	&:hover {
+		color: #9FD5BF;
+		background: #F9F7F3;
+	}
+}
+#main-doc {
+	margin-left: 280px;
+	padding: 20px;
+}
+.header-section {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 8px;
+	color: #9FD5BF;
+}
+#logo-wiki {
+	width: 50%;
+	height: auto;
+}
+code {
+	display: block;
+	background-color: #E5E4E3;
+	border-radius: 8px;
+	color: grey;
+}
+#hamburger {
+	display: block;
+}
+#menu {
+	display: none;
+	background-color: #9FD5BF;
+	height: 100vh;
+	width: 100vw;
+}
+@media only screen and (max-width: 500px) {
+	#navbar {
+		display: none;
+	}
+	#main-doc {
+		margin-left: 0px;
+	}
+	#hamburger {
+		display: block;
+		height: 50px;
+		width: 50px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.trait {
+		border-style: solid;
+		margin-bottom: 5px;
+		padding: 1px;
+		border-color: #9FD5BF;
+		background-color: #9FD5BF;
+	}
+	code {
+		margin-left: -20px;
+		width: 100%;
+		padding: 15px;
+		padding-left: 10px;
+		padding-right: 45px;
+		min-width: 233px;
+	}
+}
